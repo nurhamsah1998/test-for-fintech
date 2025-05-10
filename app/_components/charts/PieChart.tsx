@@ -3,7 +3,7 @@ import ReactApexChart from "react-apexcharts";
 import { Icon } from "@iconify/react";
 
 function PieChart() {
-  const [state, setState] = React.useState({
+  const [state] = React.useState({
     series: [44, 55, 13],
     options: {
       colors: ["#9810fa", "#0ea5e9", "#cad5e2"],

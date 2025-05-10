@@ -11,7 +11,7 @@ export const randomArrayNum = (length = 6) => {
   return result;
 };
 function StackedColumn() {
-  const [state, setState] = React.useState({
+  const [state] = React.useState({
     series: [
       {
         name: "PRODUCT A",

@@ -3,7 +3,7 @@ import ReactApexChart from "react-apexcharts";
 import { randomArrayNum } from "./StackedColumn";
 
 function Column() {
-  const [state, setState] = React.useState({
+  const [state] = React.useState({
     series: [
       {
         name: "Inflation",

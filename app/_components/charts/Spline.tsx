@@ -3,7 +3,7 @@ import ReactApexChart from "react-apexcharts";
 import { Icon } from "@iconify/react";
 
 function Spline() {
-  const [state, setState] = React.useState({
+  const [state] = React.useState({
     series: [
       {
         name: "A",
@@ -59,7 +59,7 @@ function Spline() {
         x: {
           show: false,
         },
-        custom: function ({ series, seriesIndex, dataPointIndex, w }: any) {
+        custom: function ({ series, seriesIndex, dataPointIndex }: any) {
           return (
             '<div class="arrow_box">' +
             "<span class='bg-purple-600 text-white p-2 font-bold'>" +
@@ -72,7 +72,7 @@ function Spline() {
         y: {
           show: false,
           title: {
-            formatter: (seriesName: any) => null,
+            formatter: () => null,
           },
         },
       },
