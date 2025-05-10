@@ -26,7 +26,10 @@ function Header() {
             width={18}
             color="#757575"
           />
-          <input className="bg-slate-100 border-none rounded-full h-10 px-4 pl-10 outline-0" />
+          <input
+            placeholder="Search"
+            className="bg-slate-300 border-none rounded-full h-10 px-4 pl-10 outline-0"
+          />
         </div>
         <div className="p-1 rounded-full hover:bg-slate-300 cursor-pointer duration-200">
           <Icon icon="ph:bell-fill" width={18} color="#757575" />
